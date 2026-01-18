@@ -1,0 +1,65 @@
+
+
+.hi {
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+    align-content: center;
+    transform: translateY(200%);
+    font-size: 60px;
+    display: inline-block;
+    position: relative;
+    height: auto;
+    line-height: 70px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.5s;
+    /* background-color: chocolate; */
+}
+
+.header .hi span {
+    position: absolute;
+    transition: transform 0.5s; 
+}
+
+/* LEFT-UP/RIGHT-DOWN */
+.header .hi span:nth-child(1),
+.header .hi span:nth-child(2) {
+    width: 5px;
+    height: 50%;
+    background: #262626;
+    border-radius: 2px;
+}
+
+.header .hi span:nth-child(1) {
+    top: -10px;
+    left: -10px;
+    transform-origin: right
+}
+
+.header .hi span:nth-child(2) {
+    bottom: -10px;
+    right: -10px;
+    transform-origin: right
+}
+
+
+/* UP/DOWN */
+.header .hi span:nth-child(3),
+.header .hi span:nth-child(4) {
+    width: 100%;
+    height: 5px;
+    background: #262626;
+    border-radius: 2px;
+}
+
+.header .hi span:nth-child(3) {
+    top: -10px;
+    left: -10px;
+    transform-origin: right
+}
+
+.header .hi span:nth-child(4) {
+    bottom: -10px;
+    right: -10px;
+    transform-origin: right
+}

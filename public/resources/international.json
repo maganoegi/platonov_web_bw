@@ -1,0 +1,112 @@
+{
+    "en": {
+        "name": "sergey platonov",
+        "back": "back",
+        "about": {
+            "nav": "about",
+            "title": "About Me",
+            "content": "My name is Sergey Platonov, and I am an IT engineering student, specializing in Software Engineering and Complex systems. Born in Moscow, Russia, I grew up in the Netherlands, close to Rotterdam. I moved to Switzerland at the age of 17, to pursue my academic carreer.\n\nAfter trying my luck in the faculty of Medicine of Geneva University and having failed the selection, I decided to stick to my interest for applied sciences, and spent the next 2 years in EPFL studying Mechanical Engineering. There I discovered that I love programming and the algorithmical way of thinking, and changed faculty once again. This was a decision I shall never regret, as I have never felt this good about doing something, learning every day and challenging myself to becoming a better, smarter, more passionate person.\n\nI see programming as a tool to achieve better results and solve more intricate problems in WHATEVER field of application. It's an open world, filled with new discoveries and evolution for us as human beings. After finishing my Bachelor's degree, I would like to continue studying, learning and exploring. My area of interest is Machine Learning, Data Science, Computer Vision and Linear Programming.\n\nFor the past 5 years I have been working part-time in a restaurant in order to finance my studies. This experience taught me how to work, solve problems efficienty, in a team, surrounded by people of all walks of life and (often) under great pressure. This made me grow as a person. Now I feel confident enough about my tech skills to immerge myself into the IT market, in order to grow as an engineer.\n\nCurrently I am working on a project in Pictet Group's Telecom and Security department - developing a solution to monitor the bank's international telecom network.\n\nI'm part of an international non-profit student organization, called Junior Enterprise. The goal of JE is to act as a link between companies and that university's student work force, allowing the students to acquire work experience while still in school. For a year, my role was that of an IT Project Manager, negociating with clients, preparing estimations, scope statements and other, as well as managing the actual project done by the student. Recently I have taken over the presidency of my university's branch, which shall give me more challenges and things to learn.\n"
+        },
+        "work": {
+            "nav": "projects",
+            "title": "My Work",
+            "GenDescTitle": "What do I do?",
+            "GenDescContent": "My versatile university curriculum and projects aside, I am working on a number of projects that interest me personally and give me a better understanding of the current market and technological developments. These endeavors include:\n\n &#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;several applications of genetical algorithms towards real-life problems\n&#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;speech recognizer (à la Siri) in order to understand the tech and theory behind\n&#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;full-stack web platform development for a startup\n&#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an attempt to get my own startup off the ground\n&#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Studying Machine Learning outside of university\n&#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Same with Computer Vision\n\nBelow you will find a number of repositories that I am allowed to publicly display.",
+            "WhatDoIKnow": "What do I know?",
+            "OpenSource": "My \"public\" projects"
+        },
+        "contact": {
+            "nav": "contact",
+            "title": "Contact Me!",
+            "content": ""
+        }
+    },
+    "fr": {
+        "name": "sergey platonov",
+        "back": "retour",
+        "about": {
+            "nav": "à propos",
+            "title": "A propos de moi",
+            "content": "Je m'appelle Sergey Platonov, et je suis un étudiant en Génie IT. Je me spécialise dans logiciel et systèmes complexes. Je suis né à Moscou, Russie, et j'ai grandi aux Pays-Bas, pas loin de Rotterdam. À l'âge de 17 ans, j'ai déménagé en Suisse, afin de continuer mon parcours académique.\n\nAyant tenté de survivre au tri à la faculté de médecine à l'université de Genève et échoué dans la séléction, je me suis tourné vers le génie mécanique à l'EPFL, cherchant à rester dans le domaine des sciences appliquées. À l'EPFL j'ai découvert que j'adore la programmation et le raisonnement algorithmique, ce qui m'a poussé à encore changer de faculté. Ceci fut une décision que je ne regretterai jamais, car je me suis jamais senti aussi passionné auparavant. Chaque jour est devenu une possibilité d'apprentissage, réflexion et défi de devenir une meilleure version de moi-même.\n\nJe suis passionné par le potentiel que la programmation détient dans des applications diverses, visées à améliorer le monde dans lequel nous habitons. C'est un outil versatile et puissant. Suite à l'obtention de mon diplôme de Bachelor, j'envisage de continuer mes études et l'apprentissage, visant à me spécialiser dans le Machine Learning et Data Science.\n\nAfin de financer mes études, j'ai travaillé les 4 dernières années dans la restauration. J'ai appris, grâce à cette expérience, à travailler, résoudre des problèmes de manière efficace, dans des équipes très diversifiées et (souvent) sous pression immense. Ceci a contribué à ma maturité personnelle. Maintenant je me sens de plus en plus sûr de mes capacités techniques pour pouvoir me plonger dans le monde de travail IT, afin de croître comme ingénieur.\n\nEn ce moment je travaille sur un projet à Pictet Group. Je developpe un système de monitoring du reseau telecom international du groupe."
+        },
+        "work": {
+            "nav": "projets",
+            "title": "Mes Projets",
+            "GenDescTitle": "Que fais-je?",
+            "GenDescContent": "My versatile university curriculum and projects aside, I am working on a number of projects that interest me personally and give me a better understanding of the current market and technological developments. These endeavors include:\n\n &#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;several applications of genetical algorithms towards real-life problems\n&#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;speech recognizer (à la Siri) in order to understand the tech behind\n&#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;full-stack web development for a startup\n&#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an attempt to get my own startup off the ground\n\nBelow you will find a number of repositories that I am allowed to publicly display.",
+            "WhatDoIKnow": "What do I know?",
+            "OpenSource": "My \"public\" projects"
+        },
+        "contact": {
+            "nav": "contact",
+            "title": "Contacte-moi!",
+            "content": "..."
+        }
+    },
+    "es": {
+        "name": "sergey platonov",
+        "back": "regresar",
+        "about": {
+            "nav": "acerca de mi",
+            "title": "Yo",
+            "content": "Mi nombre es Sergey Platonov, soy estudiante en Ingeniería en Tecnologías de la Información especializado en sistemas complejos. Nací en Moscú, Rusia y crecí cerca de Rotterdam en los Países Bajos. Después de cumplir los 17 anos me mude a Suiza a continuar con mis estudios superiores.\n\nDespués de probar mi suerte en la Facultad de Medicina en Ginebra y no ser elegido, decidí seguir mi interés por las ciencias aplicadas y pasé los siguientes 2 años en la EPFL (Escuela Politécnica de Lausana, Suiza) estudiando ingeniería mecánica. Una vez ahí, descubrí que me encanta la programación y el razonamiento algorítmico así que cambié de facultad una vez mas. Esta fue una decisión de la cual jamás me arrepentiré, ya que nunca me he sentido tan bien respecto a algo. Disfruto aprender y emprender grandes retos para convertirme en una persona mas preparada e inteligente.\n\nVeo la programmacion como una herramienta que me permitirá tener mejores resultados y resolver problemas complejos en cualquier campo.\n\nEs un mundo muy grande, lleno de nuevos descubrimientos y en constante evolución para nosotros como seres humanos. Una vez que termine mi Licenciatura estoy planeando de seguir estudiando y aprendiendo, specialisandome en el ML y Data Science\n\nLos últimos 4 años, en paralelo a mis estudios, he estado trabajando en un restaurante para financiar estos mismos.\n\nEsta experiencia me enseño a resolver problemas eficientemente, en equipo y rodeado de gente de todo el mundo y de todos los campos, así como a trabajar bajo presión.\n\nGracias a esto he crecido enormemente como persona y me siento seguro de mi mismo en cuanto a mis habilidades tanto humanas como tecnológicas. Estoy listo para entrar al mundo de la tecnología de la información y continuar creciendo como ingeniero."
+        },
+        "work": {
+            "nav": "proyectos",
+            "title": "Mis Proyectos",
+            "GenDescTitle": "Que hago?",
+            "GenDescContent": "My versatile university curriculum and projects aside, I am working on a number of projects that interest me personally and give me a better understanding of the current market and technological developments. These endeavors include:\n\n &#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;several applications of genetical algorithms towards real-life problems\n&#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;speech recognizer (à la Siri) in order to understand the tech behind\n&#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;full-stack web development for a startup\n&#x26AB;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an attempt to get my own startup off the ground\n\nBelow you will find a number of repositories that I am allowed to publicly display.",
+            "WhatDoIKnow": "Que conozco?",
+            "OpenSource": "Mis proyectos publicos"
+        },
+        "contact": {
+            "nav": "contacto",
+            "title": "Contactenme!",
+            "content": "..."
+        }
+    },
+    "ru": {
+        "name": "сергей платонов",
+        "back": "назад",
+        "about": {
+            "nav": "обо мне",
+            "title": "обо мне",
+            "content": "..."
+        },
+        "work": {
+            "nav": "projecten",
+            "title": "Mijn werk",
+            "GenDescTitle": "Wat doe ik?",
+            "GenDescContent": "...",
+            "WhatDoIKnow": "Wat ken ik?",
+            "OpenSource": "Mijn publieke projecten."
+        },
+        "contact": {
+            "nav": "Contact",
+            "title": "Neem contact met me op!",
+            "content": "..."
+        }
+    },
+    "nl": {
+        "name": "sergey platonov",
+        "back": "terug",
+        "about": {
+            "nav": "over mij",
+            "title": "over mij",
+            "content": "ben het nu aan het scrijven! coming soon"
+        },
+        "work": {
+            "nav": "projecten",
+            "title": "Mijn werk",
+            "GenDescTitle": "Wat doe ik?",
+            "GenDescContent": "...",
+            "WhatDoIKnow": "Wat ken ik?",
+            "OpenSource": "Mijn publieke projecten."
+        },
+        "contact": {
+            "nav": "Contact",
+            "title": "Neem contact met me op!",
+            "content": "..."
+        }
+    }
+}

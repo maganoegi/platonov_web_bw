@@ -1,0 +1,552 @@
+
+*:not(.line, .line span) {
+    transition: 0.5s;
+}
+
+pre { 
+    z-index: -1;
+    position: absolute; 
+    width: 100%;
+    top: 1px; 
+    bottom: 1px;
+    overflow: hidden;
+    background-color: transparent; 
+    color: black;
+}
+
+pre em:not(.comment) { 
+    font-style: normal;
+}
+ 
+.comment { 
+    color: #707e84; 
+}
+
+.selector {
+    color: #c66c75; 
+}
+
+.selector .key { 
+    color: #c66c75; 
+}
+
+.key { 
+    color: #c7ccd4; 
+}
+
+.value { 
+    color: #d5927b; 
+}
+
+
+
+/* --------------------------------------------------------- */
+/* ------------------- General Structure ------------------- */
+/* --------------------------------------------------------- */
+
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+
+body {
+    border: 0;
+    width: calc(100vw - 34px); 
+    font-family: 'Mukta', sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% auto 70px;
+    grid-template-columns: auto minmax(20%, 80%) auto;
+    grid-template-areas: 
+    ". h ."
+    "s c ."
+    ". f .";
+}
+
+.header {
+    grid-area: h;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.content {
+    grid-area: c;
+    justify-items: center;
+}
+
+#myNav {
+    height: 50%;
+    top: 25%;
+    margin: 0;
+    position: relative;
+    height: 90px;
+    transform: translateY(50%);
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+} 
+
+ul li {
+    display: inline-block;
+}
+
+
+/* --------------------------------------------------------- */
+/* ------------------- Footer and its elements ------------- */
+/* --------------------------------------------------------- */
+
+
+.footer {
+    grid-area: f;
+    display: block;
+    height: 50px;
+    position: relative;
+}
+
+
+.myFoot {
+    padding: 0;
+    display: grid;
+    gap: 10%;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    grid-template-columns: repeat(5, 12%);
+    grid-template-areas: 
+    "en fr es ru nl";
+}
+
+.myFoot ul li {
+    margin: 0 auto;
+}
+
+.smaller {
+    margin: 0 !important;
+    justify-self: center;
+}
+
+.en {
+    grid-area: en;
+}
+
+.fr {
+    grid-area: fr;
+}
+
+.es {
+    grid-area: es;
+}
+
+.ru {
+    grid-area: ru;
+}
+
+.nl {
+    grid-area: nl;
+}
+
+
+/* --------------------------------------------------------- */
+/* ------------- Segmented line on the left side ----------- */
+/* --------------------------------------------------------- */
+
+
+.line {
+    position: absolute;
+    height: 70%;
+    width: 30%;
+    left: 8%;
+}
+
+.segment {
+    position: absolute;
+    width: 8px;
+    height: 13.5%;
+    background-color: black;
+    z-index: 20;
+    opacity: 1;
+
+}
+
+.s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8 {
+    opacity: 0;
+}
+
+.s1 {
+    top: 0;
+}
+
+.s2 {
+    top: 11.5%;
+}
+
+.s3 {
+    top: 24%;
+}
+
+.s4 {
+    top: 36.5%
+}
+
+.s5 {
+    top: 49%;
+}
+
+.s6 {
+    top: 61.5%;
+}
+
+.s7 {
+    top: 74%;
+}
+
+.s8 {
+    top: 86.5%;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* --------------------------------------------------------- */
+/* ----------- Content Inside different sections ----------- */
+/* --------------------------------------------------------- */
+
+
+.backbtn {
+    grid-row: 1;
+    display: block;
+    position: absolute !important;
+    margin-top: 4px !important;
+    margin-left: 15px !important;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px !important;
+}
+
+.sectionTitle {
+    float: right;
+    display: block;
+    transition: 0.5s;
+    grid-row: 2;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.sectionContent {
+    transition: 0.5s;
+    grid-row: 3;
+    display: inline-block;
+    height: max-content;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.aboutContent {
+    transition: 0.5s;
+    margin-top: 10px;
+    font-size: 22px;
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px;
+    height: 100%;
+    width: 50%;
+    margin-left: 15px;
+}
+
+.aboutImages {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.workContent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gitGrid {
+    position: relative;
+    display: grid;
+    overflow: visible;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.gitwrapper {
+    height: 200px;
+    position: relative;
+    left: 20%;
+    display: block;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.gitImg {
+    display: block;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: calc(50% - 100px);
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.gitDesc {
+    text-align: center;
+    display: block;
+    position: absolute; 
+    height: 70px;
+    width: 100%;
+    bottom: calc(50% - 35px);
+    z-index: 2;
+    font-size: 21px;
+    font-weight: bold;
+    transform: 0.5s;
+}
+
+.gitwrapper:hover {
+    border: 2px solid black;
+    background-color: rgb(52, 53, 54);
+    color: antiquewhite;
+}
+
+.GenDescContent {
+    font-size: 20px;
+}
+
+
+.title {
+    font-size: 30px;
+    position: relative;
+    margin: 20px 0;
+}
+
+
+.ProgLanguageGrid {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    gap: 5px;
+}
+
+
+.progLang {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 25px; 
+    width: 100px;
+    height: 25px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+
+.web {
+    background-color: rgba(6, 154, 190, 0.2);
+    border: 2px solid rgba(6, 154, 190, 0.2);
+
+}
+
+.general {
+    background-color: rgba(75, 57, 57, 0.2);
+    border: 2px solid rgba(75, 57, 57, 0.2)
+}
+
+.other {
+    background-color: rgba(165, 165, 9, 0.2);
+    border: 2px solid rgba(165, 165, 9, 0.2);
+}
+
+
+
+
+@media (max-width: 800px) { /*------------------------------------------------------------------------------------*/
+
+    .ProgLanguageGrid {
+        width: 100%;
+    }
+
+    body {
+        width: calc(100vw - 10px); 
+
+    }
+
+    #container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 20% auto 70px;
+        grid-template-columns: auto minmax(20%, 80%) auto;
+        grid-template-areas: 
+        ". h ."
+        "s c ."
+        ". f .";
+    }
+
+    .content {
+        height: 100%;
+    }
+
+    .hi {
+        font-size: 30px !important;
+        line-height: 25px !important;
+        transform: translateY(100%) !important;
+    }
+
+    #myNav {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        top: 25%;
+        transform: translateY(0);
+    }
+
+    #myNav li .snakebtn {
+        width: auto !important;
+        padding: 10px !important;
+        margin: 0;
+    }
+
+    #myNav li {
+        width: 60%;
+        padding: 10px 0;
+    }
+
+    .line {
+        height: 60%;
+    }
+
+    ul li .backbtn {
+        position: relative;
+        font-size: 20px !important;
+        width: 50px !important;
+        padding: 2px !important;
+        z-index: 10;
+
+    }
+
+    .sectionTitle {
+        font-size: 30px;
+    }
+
+    .aboutContent {
+        position: relative;
+        z-index: 1;
+
+        height: 100%;
+        margin: 10px 0;
+        word-wrap: normal;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .sectionContent {
+        overflow: visible;
+        position: relative;
+        height: auto;
+    }
+
+    .workContent {
+        margin-bottom: 50px;
+        min-height: 100% !important;
+    }
+
+
+    .gitGrid {
+        grid-template-columns: repeat(auto-fill, 95%);
+        gap: 20px;
+        position: relative;
+    }
+
+    .gitwrapper {
+        display: grid;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+    }
+
+
+    .gitImg {
+        left: 0;
+        grid-column: 1;
+        height: 100px;
+        width: 100px;
+    }
+
+    .gitDesc {
+        grid-column: 2;
+        font-size: 15px;
+    }
+
+    .GenDescContent {
+        font-size: 15px;
+    }
+
+    .footer {
+        position: inherit;
+    }
+
+    .myFoot {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .smaller {
+        font-size: 12px !important;
+    }
+
+
+    .hi:before, .hi:after {
+        display: none;
+    }
+
+    .ProgLanguageGrid {
+        margin-left: 7%;
+    }
+}

@@ -1,0 +1,98 @@
+
+
+
+.aboutPlusImages {
+    /* display: flex; */
+    width: 100%;
+    position: relative;
+}
+
+.aboutImages {
+    flex: 1;
+    display: inline-block;
+    /* height: 100%; */
+    /* width: 30%; */
+}
+
+#megrid {
+    top: 0; 
+    z-index: 2;
+}
+
+#bbgrid {
+    bottom: 100px; 
+    z-index: 2;
+
+}
+
+#me2grid {
+    bottom: calc(50% - 150px); 
+    left: 184px;
+    z-index: 1;
+}
+
+.flip-grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.flip-container {
+    perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	/* .flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	} */
+
+.flip-container, .front, .back {
+	width: 123.75px;
+    height: 144.75px;
+}
+
+
+/* Image dimensions: 495 x 579 -> 165 x 193 -> 96.6 x 85.2 */
+.flipper .back img {
+    display: block; 
+    height: 100%; /* THE SAME AS THE ONES ABOVE!! */
+    width: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.7s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    -webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    background-color: aquamarine;
+}
+
+@media (max-width: 800px) { /*------------------------------------------------------------------------------------*/
+
+    .aboutImages {
+        display: none !important;
+    }
+}

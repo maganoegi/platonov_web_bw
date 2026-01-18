@@ -1,0 +1,210 @@
+
+/* README
+----------------- Source -------------------
+https://www.youtube.com/watch?v=Vm_te-D25D4
+
+------------- USED HTML MARKUP -------------
+<ul>
+    <li>
+        <div class="snakebtn">Test
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul> */
+
+
+/*-------------------------------*/
+/* BIGGER BUTTONS - NAVIGATION    */
+/*-------------------------------*/
+ul li .snakebtn {
+    position: relative;
+    padding: 20px; /* Allows for text to always fit inside */
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 30px;
+    width: auto;
+    color: #262626;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+ul li .snakebtn span {
+    position: absolute;
+    transition: transform 0.5s;
+}
+
+/* TOP + BOTTOM */
+ul li .snakebtn span:nth-child(1),
+ul li .snakebtn span:nth-child(3) {
+    width: 100%;
+    height: 5px;
+    background: #262626;
+    border-radius: 2px;
+}
+
+/* Top border animation */
+ul li .snakebtn span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right; 
+}
+
+ul li .snakebtn:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left; 
+    transition: transform 0.5s;
+}
+
+/* Bottom border animation */
+ul li .snakebtn span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left; 
+}
+
+ul li .snakebtn:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right; 
+    transition: transform 0.5s;
+}
+
+/* LEFT + RIGHT */
+ul li .snakebtn span:nth-child(2),
+ul li .snakebtn span:nth-child(4) {
+    width: 5px;
+    height: 100%;
+    background: #262626;
+    border-radius: 2px;
+}
+
+/* LEFT border animation */
+ul li .snakebtn span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom; 
+}
+
+ul li .snakebtn:hover span:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: top; 
+    transition: transform 0.5s;
+}
+
+/* RIGHT border animation */
+ul li .snakebtn span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: top; 
+}
+
+ul li .snakebtn:hover span:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: bottom; 
+    transition: transform 0.5s;
+}
+
+/*-------------------------------*/
+/* SMALLER BUTTONS - LANGUAGES   */
+/*-------------------------------*/
+.smaller {
+    /* Allows for text to always fit inside */
+    padding: 20px; 
+    position: relative;
+    height: auto;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    /* margin: 0 40px; */
+    width: auto;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.smaller span {
+    position: absolute;
+    transition: transform 0.5s;
+}
+
+/* TOP + BOTTOM */
+.smaller span:nth-child(1),
+ul li .snakebtn span:nth-child(3) {
+    width: 100%;
+    height: 5px;
+    background: #262626;
+    border-radius: 2px;
+}
+
+/* Top border animation */
+.smaller span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right; 
+}
+
+.smaller:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left; 
+    transition: transform 0.5s;
+}
+
+/* Bottom border animation */
+.smaller span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left; 
+}
+
+.smaller:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right; 
+    transition: transform 0.5s;
+}
+
+/* LEFT + RIGHT */
+.smaller span:nth-child(2),
+.smaller span:nth-child(4) {
+    width: 5px;
+    height: 100%;
+    background: #262626;
+    border-radius: 2px;
+}
+
+/* LEFT border animation */
+.smaller span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom; 
+}
+
+.smaller:hover span:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: top; 
+    transition: transform 0.5s;
+}
+
+/* RIGHT border animation */
+.smaller span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: top; 
+}
+
+.smaller:hover span:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: bottom; 
+    transition: transform 0.5s;
+}
