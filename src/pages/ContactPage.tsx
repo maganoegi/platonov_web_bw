@@ -17,10 +17,15 @@ export function ContactPage() {
 
   return (
     <div className="sectionContent">
-      <div className="backbtn snakebtn" onClick={() => navigate("/")}>
-        {t("back")}
-        {fourSpans}
-      </div>
+      <ul style={{ padding: 0, margin: 0, listStyle: "none" }}>
+        <li>
+          <div className="backbtn snakebtn" onClick={() => navigate("/")}>
+            {t("back")}
+            {fourSpans}
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </li>
+      </ul>
 
       <div className="sectionTitle">{t("contact.title")}</div>
 

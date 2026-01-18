@@ -165,7 +165,7 @@ ul li {
 .line {
     position: absolute;
     height: 70%;
-    width: 30%;
+    width: 5%;
     left: 8%;
 }
 
@@ -234,7 +234,7 @@ ul li {
 .backbtn {
     grid-row: 1;
     display: block;
-    position: absolute !important;
+    position: relative !important;
     margin-top: 4px !important;
     margin-left: 15px !important;
     opacity: 0;
@@ -437,6 +437,7 @@ ul li {
         width: auto !important;
         padding: 10px !important;
         margin: 0;
+        z-index: 30;
     }
 
     #myNav li {
@@ -446,6 +447,18 @@ ul li {
 
     .line {
         height: 60%;
+        z-index: 0;
+    }
+
+    .line,
+    .line * {
+    pointer-events: none;
+    }
+
+    /* If the header name overlaps the nav (can happen due to transforms), ignore it too */
+    .hi,
+    .hi * {
+    pointer-events: none;
     }
 
     ul li .backbtn {

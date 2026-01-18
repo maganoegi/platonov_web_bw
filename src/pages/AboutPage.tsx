@@ -1,6 +1,7 @@
 import { useI18n } from "../i18n/I18nProvider";
 import { useNavigate } from "react-router-dom";
 import { useAboutFlipOnScroll } from "../hooks/useAboutFlipOnScroll";
+import { AboutImages } from "../components/About/AboutImages";
 
 const fourSpans = (
   <>
@@ -19,10 +20,15 @@ export function AboutPage() {
 
   return (
     <div className="sectionContent">
-      <div className="backbtn snakebtn" onClick={() => navigate("/")}>
-        {t("back")}
-        {fourSpans}
-      </div>
+      <ul style={{ padding: 0, margin: 0, listStyle: "none" }}>
+        <li>
+          <div className="backbtn snakebtn" onClick={() => navigate("/")}>
+            {t("back")}
+            {fourSpans}
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </li>
+      </ul>
 
       <div className="sectionTitle">{t("about.title")}</div>
 
@@ -32,9 +38,15 @@ export function AboutPage() {
           className="aboutContent"
           dangerouslySetInnerHTML={{ __html: tHtml("about.content") }}
         />
-        {/* IMPORTANT: you will paste your exact flip-grid markup here (ids preserved) */}
-        <div className="aboutImages">{/* AboutImages.tsx goes here */}</div>
+      <div className="aboutPlusImages">
+        <div
+          className="aboutContent"
+          dangerouslySetInnerHTML={{ __html: tHtml("about.content") }}
+        />
+        <AboutImages />
       </div>
+    </div>
     </div>
   );
 }
+
