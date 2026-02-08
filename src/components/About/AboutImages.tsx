@@ -7,7 +7,7 @@ export function AboutImages() {
     const me2Grid = ["me21","me22","me23","me24","me25","me26","me27","me28","me29"];
     const bbGrid = ["bb1","bb2","bb3","bb4","bb5","bb6","bb7","bb8","bb9"];
 
-    const back = (id: string) => `/resources/img/${id}.jpg`;
+    const back = (id: string) => `/resources/img/${id}.jpeg`;
 
     return (
         <div className="aboutImages">

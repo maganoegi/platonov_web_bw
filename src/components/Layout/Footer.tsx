@@ -48,7 +48,7 @@ export function Footer() {
         <LangBtn code="ru" />
         <LangBtn code="nl" />
       </ul>
-      <div style={styles.bottomLeftCornerStyles}>version: {APP_VERSION}</div>
+      <div style={styles.bottomLeftCornerStyles}>{APP_VERSION}</div>
     </footer>
   );
 }
