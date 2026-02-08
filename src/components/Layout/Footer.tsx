@@ -1,4 +1,4 @@
-import React, { type CSSProperties } from 'react';
+import { type CSSProperties } from 'react';
 
 import type { Lang } from "../../i18n/types";
 import { useI18n } from "../../i18n/I18nProvider";
