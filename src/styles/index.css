@@ -107,11 +107,18 @@ ul li {
 /* --------------------------------------------------------- */
 
 
-.footer {
+/* .footer {
     grid-area: f;
     display: block;
     height: 50px;
     position: relative;
+} */
+
+.footer{
+  grid-area: f;
+  align-self: end;                /* ensure it hugs the bottom */
+  /* remove fixed height unless you really need it */
+  /* height: 50px; */
 }
 
 
@@ -119,7 +126,7 @@ ul li {
     padding: 0;
     display: grid;
     gap: 10%;
-    margin: 0 auto;
+    margin: 0 auto 0;
     width: 50%;
     text-align: center;
     grid-template-columns: repeat(5, 12%);
@@ -397,13 +404,23 @@ ul li {
 
     }
 
-    #container {
+    /* #container {
         width: 100%;
         height: 100%;
         display: grid;
         grid-template-rows: 20% auto 70px;
         grid-template-columns: auto minmax(20%, 80%) auto;
         grid-template-areas: 
+        ". h ."
+        "s c ."
+        ". f .";
+    } */
+    #container{
+    min-height: 100vh;              /* not height:100% */
+    display: grid;
+    grid-template-rows: auto 1fr auto;  /* middle stretches */
+    grid-template-columns: 1fr minmax(20%, 80%) 1fr;
+    grid-template-areas:
         ". h ."
         "s c ."
         ". f .";

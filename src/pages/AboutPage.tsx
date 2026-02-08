@@ -33,11 +33,7 @@ export function AboutPage() {
       <div className="sectionTitle">{t("about.title")}</div>
 
       {/* keep the same classnames */}
-      <div className="aboutPlusImages">
-        <div
-          className="aboutContent"
-          dangerouslySetInnerHTML={{ __html: tHtml("about.content") }}
-        />
+
       <div className="aboutPlusImages">
         <div
           className="aboutContent"
@@ -46,7 +42,7 @@ export function AboutPage() {
         <AboutImages />
       </div>
     </div>
-    </div>
+
   );
 }
 

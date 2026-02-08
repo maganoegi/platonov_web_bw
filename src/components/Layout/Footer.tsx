@@ -1,5 +1,9 @@
+import React, { type CSSProperties } from 'react';
+
 import type { Lang } from "../../i18n/types";
 import { useI18n } from "../../i18n/I18nProvider";
+
+const APP_VERSION = import.meta.env.VITE_APP_VERSION ?? "dev";
 
 const fourSpans = (
   <>
@@ -24,14 +28,27 @@ function LangBtn({ code }: { code: Lang }) {
   );
 }
 
+const styles = {
+    bottomLeftCornerStyles: {
+    position: 'fixed',
+    bottom: '10px',
+    left: '10px',
+    fontSize: '0.7rem',
+    color: 'grey',
+  } as CSSProperties,
+}
+
 export function Footer() {
   return (
-    <ul className="myFoot">
-      <LangBtn code="en" />
-      <LangBtn code="fr" />
-      <LangBtn code="es" />
-      <LangBtn code="ru" />
-      <LangBtn code="nl" />
-    </ul>
+    <footer className="footer">
+      <ul className="myFoot">
+        <LangBtn code="en" />
+        <LangBtn code="fr" />
+        <LangBtn code="es" />
+        <LangBtn code="ru" />
+        <LangBtn code="nl" />
+      </ul>
+      <div style={styles.bottomLeftCornerStyles}>version: {APP_VERSION}</div>
+    </footer>
   );
 }
